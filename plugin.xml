@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-baidu-mob-stat" version="1.0.0">
+  <name>BaiduMobStat</name>
+  <description>Cordova Baidu Mobile Analysis Plugin</description>
+  <keywords>cordova,baidu,mobile,analysis</keywords>
+
+  <js-module src="www/BaiduMobStat.js" name="BaiduMobStat">
+    <clobbers target="BaiduMobStat"/>
+  </js-module>
+
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="BaiduMobStat">
+        <param name="ios-package" value="CDVBaiduMobStat"/>
+      </feature>
+    </config-file>
+    <header-file src="src/ios/CDVBaiduMobStat.h"/>
+    <source-file src="src/ios/CDVBaiduMobStat.m"/>
+  </platform>
+</plugin>

@@ -1,0 +1,24 @@
+{
+  "name": "cordova-plugin-baidu-mob-stat",
+  "version": "1.0.0",
+  "description": "Cordova Plugin For Baidu Mobile Analysis",
+  "cordova": {
+    "id": "cordova-plugin-baidu-mob-stat",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yerurui/cordova-plugin-baidu-mob-stat.git"
+  },
+  "keywords": [
+    "cordova",
+    "Baidu Mobile Analysis",
+    "BaiduMobStat",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "Rurui Ye",
+  "license": "Apache License 2.0"
+}

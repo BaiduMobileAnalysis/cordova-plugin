@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-baidu-mob-stat" version="1.0.0">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-baidumobstat" version="1.0.0">
   <name>BaiduMobStat</name>
   <description>Cordova Baidu Mobile Analysis Plugin</description>
-  <keywords>cordova,baidu,mobile,analysis</keywords>
+  <keywords>cordova,baidu,mobile,analysis,baidumobstat</keywords>
 
   <js-module src="www/BaiduMobStat.js" name="BaiduMobStat">
     <clobbers target="BaiduMobStat"/>

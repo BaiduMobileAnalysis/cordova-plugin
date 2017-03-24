@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-baidumobstat",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "summary": "Cordova BaiduMobStat Plugin",
   "description": "cocoapods plugin for BaiduMobStat",
   "homepage": "https://github.com/BaiduMobileAnalysis/cordova-ios-plugin",
@@ -16,7 +16,7 @@
   },
   "source": {
     "git": "https://github.com/BaiduMobileAnalysis/cordova-ios-plugin.git",
-    "tag": "1.0.0"
+    "tag": "1.1.0"
   },
   "source_files": "src/ios/*.{h,m}",
   "preserve_paths": [
@@ -31,7 +31,7 @@
       ">= 4.0.0"
     ],
     "BaiduMobStat": [
-      ">= 4.3.0"
+      ">= 4.5.0"
     ]
   }
 }

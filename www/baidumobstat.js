@@ -8,27 +8,39 @@ var errorHandle = function(error) {
 
 module.exports = {
     //print something to the native console
-    logEvent: function(event, label) {
-        exec(null, errorHandle, "BaiduMobStat", "logEvent", [event, label]);
+    onEvent: function(eventId, eventLabel) {
+        exec(null, errorHandle, "BaiduMobStat", "onEvent", [eventId, eventLabel]);
     },
 
-    logEventWithDurationTime: function(event, label, duration) {
-        exec(null, errorHandle, "BaiduMobStat", "logEventWithDurationTime", [event, label, duration]);
+    onEventWithAttributes: function(eventId, eventLabel, attributes) {
+        exec(null, errorHandle, "BaiduMobStat", "onEventWithAttributes", [eventId, eventLabel, attributes]);
     },
 
-    eventStart: function(event, label) {
-        exec(null, errorHandle, "BaiduMobStat", "eventStart", [event, label]);
+    onEventDuration: function(eventId, eventLabel, duration) {
+        exec(null, errorHandle, "BaiduMobStat", "onEventDuration", [eventId, eventLabel, duration]);
     },
 
-    eventEnd: function(event, label) {
-        exec(null, errorHandle, "BaiduMobStat", "eventEnd", [event, label]);
+    onEventDurationWithAttributes: function(eventId, eventLabel, duration, attributes) {
+        exec(null, errorHandle, "BaiduMobStat", "onEventDurationWithAttributes", [eventId, eventLabel, duration, attributes]);
     },
 
-    pageviewStartWithName: function(page) {
-        exec(null, errorHandle, "BaiduMobStat", "pageviewStartWithName", [page]);
+    onEventStart: function(eventId, eventLabel) {
+        exec(null, errorHandle, "BaiduMobStat", "onEventStart", [eventId, eventLabel]);
     },
 
-    pageviewEndWithName: function(page) {
-        exec(null, errorHandle, "BaiduMobStat", "pageviewEndWithName", [page]);
+    onEventEnd: function(eventId, eventLabel) {
+        exec(null, errorHandle, "BaiduMobStat", "onEventEnd", [eventId, eventLabel]);
+    },
+
+    onEventEndWithAttributes: function(eventId, eventLabel, attributes) {
+        exec(null, errorHandle, "BaiduMobStat", "onEventEndWithAttributes", [eventId, eventLabel, attributes]);
+    },
+
+    onPageStart: function(page) {
+        exec(null, errorHandle, "BaiduMobStat", "onPageStart", [page]);
+    },
+
+    onPageEnd: function(page) {
+        exec(null, errorHandle, "BaiduMobStat", "onPageEnd", [page]);
     }
 }

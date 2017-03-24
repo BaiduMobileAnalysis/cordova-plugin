@@ -11,10 +11,13 @@
 
 @interface CDVBaiduMobStat : CDVPlugin
 
--(void)logEvent:(CDVInvokedUrlCommand*)command;
--(void)logEventWithDurationTime:(CDVInvokedUrlCommand *)command;
--(void)eventStart:(CDVInvokedUrlCommand *)command;
--(void)eventEnd:(CDVInvokedUrlCommand *)command;
--(void)pageviewStartWithName:(CDVInvokedUrlCommand *)command;
--(void)pageviewEndWithName:(CDVInvokedUrlCommand *)command;
+-(void)onEvent:(CDVInvokedUrlCommand*)command;
+-(void)onEventWithAttributes:(CDVInvokedUrlCommand*)command;
+-(void)onEventDuration:(CDVInvokedUrlCommand *)command;
+-(void)onEventDurationWithAttributes:(CDVInvokedUrlCommand *)command;
+-(void)onEventStart:(CDVInvokedUrlCommand *)command;
+-(void)onEventEnd:(CDVInvokedUrlCommand *)command;
+-(void)onEventEndWithAttributes:(CDVInvokedUrlCommand *)command;
+-(void)onPageStart:(CDVInvokedUrlCommand *)command;
+-(void)onPageEnd:(CDVInvokedUrlCommand *)command;
 @end

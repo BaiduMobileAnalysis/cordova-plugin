@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BaiduMobileAnalysis/cordova-ios-plugin.git"
+    "url": "git+https://github.com/BaiduMobileAnalysis/cordova-plugin.git"
   },
   "keywords": [
     "cordova",
@@ -24,7 +24,7 @@
   "author": "Rurui Ye, Jie Yang",
   "license": "Apache License 2.0",
   "bugs": {
-    "url": "https://github.com/BaiduMobileAnalysis/cordova-ios-plugin/issues"
+    "url": "https://github.com/BaiduMobileAnalysis/cordova-plugin/issues"
   },
-  "homepage": "https://github.com/BaiduMobileAnalysis/cordova-ios-plugin#readme"
+  "homepage": "https://github.com/BaiduMobileAnalysis/cordova-plugin#readme"
 }

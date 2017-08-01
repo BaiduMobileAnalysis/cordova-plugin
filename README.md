@@ -11,12 +11,12 @@
 
 	iOS:  
   	```
-  		cordova plugin add cordova-plugin-baidumobstat
+  	cordova plugin add cordova-plugin-baidumobstat
   	```
   	
   	Android:  
   	```
-  		cordova plugin add cordova-plugin-baidumobstat --variable 	APP_KEY="replace with your appkey"
+  	cordova plugin add cordova-plugin-baidumobstat --variable APP_KEY="replace with your appkey"
   	```
   	
 4. build and debug

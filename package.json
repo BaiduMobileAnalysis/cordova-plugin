@@ -1,24 +1,30 @@
 {
   "name": "cordova-plugin-baidumobstat",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Cordova Plugin For Baidu Mobile Analysis",
   "cordova": {
     "id": "cordova-plugin-baidumobstat",
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BaiduMobileAnalysis/cordova-ios-plugin.git"
+    "url": "git+https://github.com/BaiduMobileAnalysis/cordova-ios-plugin.git"
   },
   "keywords": [
     "cordova",
     "Baidu Mobile Analysis",
     "BaiduMobStat",
     "ecosystem:cordova",
-    "cordova-ios"
+    "cordova-ios",
+    "cordova-android"
   ],
-  "author": "Rurui Ye",
-  "license": "Apache License 2.0"
+  "author": "Rurui Ye, Jie Yang",
+  "license": "Apache License 2.0",
+  "bugs": {
+    "url": "https://github.com/BaiduMobileAnalysis/cordova-ios-plugin/issues"
+  },
+  "homepage": "https://github.com/BaiduMobileAnalysis/cordova-ios-plugin#readme"
 }

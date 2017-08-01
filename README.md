@@ -7,7 +7,7 @@
   cordova plugin remove cordova-plugin-baidu-mob-stat
   ```
 
-3. add the plugin  
+3. add the plugin
 
 	iOS:  
   	```
@@ -18,5 +18,5 @@
   	```
   	cordova plugin add cordova-plugin-baidumobstat --variable APP_KEY="replace with your appkey"
   	```
-  	
+
 4. build and debug

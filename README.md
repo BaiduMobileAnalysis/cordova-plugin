@@ -4,19 +4,22 @@
 1. clone this project
 2. remove the old plugin from the project
   ```
-  cordova plugin remove cordova-plugin-baidu-mob-stat
+  cordova plugin remove cordova-plugin-baidumobstat
   ```
 
 3. add the plugin
 
-	iOS:  
   	```
   	cordova plugin add cordova-plugin-baidumobstat
   	```
-  	
-  	Android:  
-  	```
-  	cordova plugin add cordova-plugin-baidumobstat --variable APP_KEY="replace with your appkey"
-  	```
+
+4. config
+	
+	参考cordova-sample部分
 
 4. build and debug
+	
+	```
+	cordova build
+	cordova run android  (cordova run ios)
+	```

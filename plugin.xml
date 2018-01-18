@@ -10,8 +10,6 @@
     <clobbers target="BaiduMobStat"/>
   </js-module>
 
-  <preference name="APP_KEY" />
-
   <platform name="ios">
     <config-file target="config.xml" parent="/*">
       <feature name="BaiduMobStat">
@@ -46,7 +44,7 @@
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
         <meta-data
             android:name="BaiduMobAd_STAT_ID"
-            android:value="$APP_KEY" />
+            android:value="test_appkey" />
         <meta-data
             android:name="BaiduMobAd_CHANNEL"
             android:value="test channel" />

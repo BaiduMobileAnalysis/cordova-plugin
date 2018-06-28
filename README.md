@@ -1,5 +1,9 @@
 # 百度移动统计Cordova插件
 
+## How to install
+
+`cordova plugin add https://github.com/waitaction/cordova-plugin-baidumobstat.git --variable APPKEY=YOURAPPKEY`
+
 ## How to debug:
 1. clone this project
 2. remove the old plugin from the project

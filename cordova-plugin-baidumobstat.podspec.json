@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "summary": "Cordova BaiduMobStat Plugin",
   "description": "cocoapods plugin for BaiduMobStat",
-  "homepage": "https://github.com/BaiduMobileAnalysis/cordova-ios-plugin",
+  "homepage": "https://github.com/waitaction/cordova-plugin-baidumobstat",
   "license": {
     "type": "Copyright",
     "text": "Copyright 2017 Baidu. All rights reserved."
@@ -15,7 +15,7 @@
     "ios": "8.0"
   },
   "source": {
-    "git": "https://github.com/BaiduMobileAnalysis/cordova-ios-plugin.git",
+    "git": "https://github.com/waitaction/cordova-plugin-baidumobstat.git",
     "tag": "1.1.0"
   },
   "source_files": "src/ios/*.{h,m}",

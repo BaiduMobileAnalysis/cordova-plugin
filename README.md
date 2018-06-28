@@ -13,9 +13,9 @@
 
     BaiduMobStat.onEvent('event1', '事件一'); //不指定事件一发生次数，默认为1
 
-	BaiduMobStat.onEventDuration('event2', '事件二', 1000); //指定事件二发生次数
+    BaiduMobStat.onEventDuration('event2', '事件二', 1000); //指定事件二发生次数
 
-	BaiduMobStat.onEventStart('event3', '事件三'); //事件三开始
+    BaiduMobStat.onEventStart('event3', '事件三'); //事件三开始
 
     BaiduMobStat.onEventEnd('event3', '事件三'); //事件三结束
 

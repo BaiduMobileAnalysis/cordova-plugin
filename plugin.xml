@@ -10,15 +10,7 @@
         <clobbers target="BaiduMobStat"/>
     </js-module>
 
-    <platform name="ios">
-        <config-file target="config.xml" parent="/*">
-            <feature name="BaiduMobStat">
-                <param name="ios-package" value="CDVBaiduMobStat"/>
-            </feature>
-        </config-file>
-        <header-file src="src/ios/CDVBaiduMobStat.h"/>
-        <source-file src="src/ios/CDVBaiduMobStat.m"/>
-    </platform>
+
 
     <platform name="android">
         <framework src="src/android/plugin.gradle" custom="true" type="gradleReference"/>
@@ -54,5 +46,28 @@
 
         <source-file src="src/android/BaiduMobStat.java" target-dir="src/com/baidu/mobstat"/>
     </platform>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="BaiduMobStat">
+                <param name="ios-package" value="CDVBaiduMobStat"/>
+            </feature>
+            <preference name="appkey" value="$APPKEY"/>
+        </config-file>
 
+        <header-file src="src/ios/CDVBaiduMobStat.h"/>
+        <source-file src="src/ios/CDVBaiduMobStat.m"/>
+        <header-file src="src/ios/lib/BaiduMobStat.h" framework="true" />
+        <source-file src="src/ios/lib/libBaiduMobStat.a" framework="true" />
+
+        <framework src="JavaScriptCore.framework" />
+        <framework src="Security.framework" />
+        <framework src="CoreLocation.framework" />
+        <framework src="SystemConfiguration.framework" />
+        <framework src="CoreTelephony.framework" />
+        <framework src="CoreGraphics.framework" />
+        <framework src="UIKit.framework" />
+        <framework src="Foundation.framework" />
+        <framework src="libz.1.2.5.tbd" />
+        <framework src="libstdc++.tbd" />
+    </platform>
 </plugin>

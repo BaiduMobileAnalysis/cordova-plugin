@@ -32,3 +32,11 @@
     BaiduMobStat.onPageEnd('页面一');
 
 ```
+
+## 示例
+
+```javascript
+    $(document).ready(function(){
+        BaiduMobStat.onEvent('jquery_ready', '页面已加载'); 
+    })
+```

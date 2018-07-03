@@ -6,7 +6,7 @@
     <description>Cordova Baidu Mobile Analysis Plugin</description>
     <keywords>cordova,baidu,mobile,analysis,baidumobstat</keywords>
     <preference name="ANDROID_APPKEY" />
-    <preference name="IOS_APPKEY">
+    <preference name="IOS_APPKEY" />
     <js-module src="www/BaiduMobStat.js" name="BaiduMobStat">
         <clobbers target="BaiduMobStat"/>
     </js-module>

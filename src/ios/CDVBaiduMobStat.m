@@ -11,6 +11,11 @@
 
 @implementation CDVBaiduMobStat
 
+-(void) pluginInitialize {
+    NSString* appKey = [[self.commandDelegate settings] objectForKey:@"appkey"];
+    [[BaiduMobStat defaultStat] startWithAppId:appKey]; 
+}
+
 -(void)onEvent:(CDVInvokedUrlCommand *)command {
     CDVPluginResult* result= nil;
     NSArray* args=command.arguments;

@@ -1,75 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-baidumobstat" version="1.0.0"
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-baidumobstat" version="1.0.0" 
     xmlns:android="http://schemas.android.com/apk/res/android">
-  
-  <name>BaiduMobStat</name>
-  <description>Cordova Baidu Mobile Analysis Plugin</description>
-  <keywords>cordova,baidu,mobile,analysis,baidumobstat</keywords>
 
-  <js-module src="www/BaiduMobStat.js" name="BaiduMobStat">
-    <clobbers target="BaiduMobStat"/>
-  </js-module>
+    <name>BaiduMobStat</name>
+    <description>Cordova Baidu Mobile Analysis Plugin</description>
+    <keywords>cordova,baidu,mobile,analysis,baidumobstat</keywords>
+    <preference name="ANDROID_APPKEY" />
+    <preference name="IOS_APPKEY" />
+    <js-module src="www/BaiduMobStat.js" name="BaiduMobStat">
+        <clobbers target="BaiduMobStat"/>
+    </js-module>
 
-  <platform name="ios">
-    <config-file target="config.xml" parent="/*">
-      <feature name="BaiduMobStat">
-        <param name="ios-package" value="CDVBaiduMobStat"/>
-      </feature>
-    </config-file>
-    <header-file src="src/ios/CDVBaiduMobStat.h"/>
-    <source-file src="src/ios/CDVBaiduMobStat.m"/>
-  </platform>
 
-  <platform name="android">
-    <framework src="src/android/plugin.gradle" custom="true" type="gradleReference"/>
-    <config-file target="config.xml" parent="/*">
-      <feature name="BaiduMobStat">
-        <param name="android-package" value="com.baidu.mobstat.BaiduMobStat"/>
-      </feature>
-    </config-file>
 
-    <config-file target="AndroidManifest.xml" parent="/manifest">
-        <uses-permission android:name="android.permission.INTERNET" />
-        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-        <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-        <uses-permission android:name="android.permission.GET_TASKS" />
-        <uses-permission android:name="android.permission.BLUETOOTH" />
-        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    </config-file>
+    <platform name="android">
+        <framework src="src/android/plugin.gradle" custom="true" type="gradleReference"/>
+        <config-file target="config.xml" parent="/*">
+            <feature name="BaiduMobStat">
+                <param name="android-package" value="com.baidu.mobstat.BaiduMobStat"/>
+            </feature>
+        </config-file>
 
-    <config-file target="AndroidManifest.xml" parent="/manifest/application">
-        <meta-data
-            android:name="BaiduMobAd_STAT_ID"
-            android:value="test_appkey" />
-        <meta-data
-            android:name="BaiduMobAd_CHANNEL"
-            android:value="test channel" />
-        <meta-data
-            android:name="BaiduMobAd_EXCEPTION_LOG"
-            android:value="true" />
-        <meta-data
-            android:name="BaiduMobAd_SEND_STRATEGY"
-            android:value="APP_START" />
-        <meta-data
-            android:name="BaiduMobAd_ONLY_WIFI"
-            android:value="false" />
-        <meta-data
-            android:name="BaiduMobAd_CELL_LOCATION"
-            android:value="true" />
-        <meta-data
-            android:name="BaiduMobAd_GPS_LOCATION"
-            android:value="true" />
-        <meta-data
-            android:name="BaiduMobAd_WIFI_LOCATION"
-            android:value="true" />
-    </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+            <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+            <uses-permission android:name="android.permission.GET_TASKS" />
+            <uses-permission android:name="android.permission.BLUETOOTH" />
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        </config-file>
 
-    <source-file src="src/android/BaiduMobStat.java"
-        target-dir="src/com/baidu/mobstat"/>
-  </platform>
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <meta-data android:name="BaiduMobAd_STAT_ID" android:value="$ANDROID_APPKEY" />
+            <meta-data android:name="BaiduMobAd_CHANNEL" android:value="China Market" />
+            <meta-data android:name="BaiduMobAd_EXCEPTION_LOG" android:value="true" />
+            <meta-data android:name="BaiduMobAd_SEND_STRATEGY" android:value="APP_START" />
+            <meta-data android:name="BaiduMobAd_ONLY_WIFI" android:value="false" />
+            <meta-data android:name="BaiduMobAd_CELL_LOCATION" android:value="true" />
+            <meta-data android:name="BaiduMobAd_GPS_LOCATION" android:value="true" />
+            <meta-data android:name="BaiduMobAd_WIFI_LOCATION" android:value="true" />
+        </config-file>
 
+        <source-file src="src/android/BaiduMobStat.java" target-dir="src/com/baidu/mobstat"/>
+    </platform>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="BaiduMobStat">
+                <param name="ios-package" value="CDVBaiduMobStat"/>
+            </feature>
+            <preference name="appkey" value="$IOS_APPKEY"/>
+        </config-file>
+
+        <header-file src="src/ios/CDVBaiduMobStat.h"/>
+        <source-file src="src/ios/CDVBaiduMobStat.m"/>
+        <header-file src="src/ios/lib/BaiduMobStat.h" framework="true" />
+        <source-file src="src/ios/lib/libBaiduMobStat.a" framework="true" />
+
+        <framework src="JavaScriptCore.framework" />
+        <framework src="Security.framework" />
+        <framework src="CoreLocation.framework" />
+        <framework src="SystemConfiguration.framework" />
+        <framework src="CoreTelephony.framework" />
+        <framework src="CoreGraphics.framework" />
+        <framework src="UIKit.framework" />
+        <framework src="Foundation.framework" />
+        <framework src="libz.1.2.5.tbd" />
+        <framework src="libstdc++.tbd" />
+    </platform>
 </plugin>

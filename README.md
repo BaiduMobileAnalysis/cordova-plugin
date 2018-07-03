@@ -2,7 +2,7 @@
 
 ## 怎么安装
 
-`cordova plugin add https://github.com/waitaction/cordova-plugin-baidumobstat.git --variable APPKEY=YOURAPPKEY`
+`cordova plugin add https://github.com/waitaction/cordova-plugin-baidumobstat.git --variable ANDROID_APPKEY=YOUR_ANDROID_APPKEY IOS_APPKEY=YOUR_IOS_APPKEY`
 
 例如
 `cordova plugin add https://github.com/waitaction/cordova-plugin-baidumobstat.git --variable APPKEY=sa12ew1`
